@@ -1,6 +1,7 @@
 ---
 layout: 	page
 title: 		Contact
+subtitle: Get in touch with me...
 comments:	false
 noToc:		true
 group: 		navigation
