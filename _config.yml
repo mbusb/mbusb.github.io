@@ -82,7 +82,7 @@ url-pretty: "multibootusb.org"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "multibootusb"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-50630666-1"
