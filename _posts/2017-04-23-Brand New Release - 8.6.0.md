@@ -34,7 +34,7 @@ for his valuable contribution and all credits goes to him for redesigning of GUI
 * And few other minor improvemnts 
 
 
-__Here is screenshots of new GUI:-__
+__Some screenshots of new GUI:-__
 
 * Main Screen
 
