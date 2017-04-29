@@ -1,117 +1,212 @@
 ---
-layout: page
+layout: 	page
 title:      Guide
-subtitle: Learn how to use MultiBootUSB...
+subtitle: 	Learn how to use MultiBootUSB...
 comments:   false
 noToc:      true
 group:      navigation
+---   
+
+## Table of content:
+
+[What does multibootusb do?](#what-does-multibootusb-do)  
+[Minimum Requirements](#requirements)  
+[Install  MultiBootUSB - Windows and Linux](#installation)  
+[Creating live linux on USB disk](#creating-live-linux-on-usb-disk)  
+[Adding new/additional live Linux](#adding-an-additional-live-linux)  
+[Removing or Uninstalling a distro](#removing-or-uninstalling-distro)    
+[Reinstalling Syslinux](#reinstalling-syslinux)   
+[Edit Syslinux config files](#edit-syslinux-config-files)   
+[Test ISO and USB with QEMU option](#test-your-iso-and-usb-with-qemu-option)
+
+---
+
+## What does multibootusb do?
+
+MultiBootUSB allows you to do the following:-
+
+1.  Install multiple live Linux and other Operating Systems in to a USB disk and make it bootable without erasing existing data.
+2.  Ability to uninstall installed OS later.
+3.  Write ISO image directly to a USB disk (you can think of GUI for Linux `dd` command).
+4.  Boot ISO images directly without rebooting your system using QEMU option.
+5.  Boot bootable USBs without rebooting your system using QEMU option.
+6.  Boot USB on UEFI/EFI system through GRUB2 bootloader support (limited support).
+
 ---
 
 ## Requirements:
 
-* USB disk formatted in one of the following filesystem:-
-    * FAT, NTFS, ext2/3/4 and or Btrf filesystem. However, **FAT filesystem is recommended** and ext2/3/4 and or Btrf 
-    filesystems will only work under Linux.
-* Live linux as an ISO file of your choice.
-* Latest version of MultiBootUSB.
+1. USB disk formatted in one of the following filesystem:-
+    * FAT32, NTFS, ext2/3/4 or Btrf filesystem. However, **FAT filesystem is recommended** and ext2/3/4 or Btrf filesystems will only work under Linux.
+    * Keep single partition (primary) for avoiding failure later.
+2. Live Linux/OS as an **ISO** file of your choice.
+3. Latest release of MultiBootUSB.
+
+---
 
 ## Installation:
 
 * On Windows:-
-    * The windows version of multbootusb is a standalone program. No installation is required. Simply download the 
-    precompiled binary (.exe) file from here:-
-     http://multibootusb.org/download/
-     * The program can be launched directly just by double clicking on the downloaded ".exe" file.
+    * The windows version of multbootusb is not a standalone program. You need to install it on windows after download. Download the latest 
+    precompiled setup binary (.exe) file from 
+     [here](http://multibootusb.org/page_download/)
+     * The installation is farley simple. Double click on the executable and follow the onscreen instruction.
 
 * On Linux:-
 
     **Using binary method:-**
     
-    * Download the installation files (.deb and .rpm) files for various distros from here:-
-    http://multibootusb.org/download/
+    * Download the installation and source files for various distros from 
+    [here](http://multibootusb.org/page_download/)
     * Use your favourite package manager to install multibootusb.
     
-    **Using source code method:-**
+    **Using source code method `Linux`:-**
     
     * The install.py script provided with multibootusb should take care of all dependencies and install multibootusb.
-    Assume that you have downloaded the package named "multibootusb.tar.gz" in to your home directory.
+    Assume that you have downloaded the package named **multibootusb.tar.gz** in to your home directory.
     Issue the following commands to install multibootusb:-
 
-    tar -xf ./multibootusb.tar.gz    
-    cd multibootusb    
-    chmod +x ./install.py    
-    sudo ./install.py    
-    
+```sh
+    tar -xf ./multibootusb.tar.gz
+    cd multibootusb
+    chmod +x ./install.py   
+    sudo ./install.py
+``` 
+
+---
 
 ## Creating live linux on USB disk:
 
-* Creating live Linux on a USB disk involves three steps and clearly written as **Step 1**, **Step 2** and **Step 3** in 
-**bold** letters on the right side of multibootusb GUI. Step wise operations are shown below:- 
-    * **Step 1**
-        * Insert USB disk and wait for few seconds so that Operating System can detect it.
-            * All modern Linux distros should mount USB disks automatically after insertion. If not, open file manager and 
-            click on the USB disk icon to mount it. The same thing can be done from terminal also. But I am not going in to details.
-        * Open multibootusb by double clicking on the downloaded ".exe" file under Windows. Under Linux, multibootusb can 
-        be found under system menu. On Ubuntu click on dash --> type "multibootusb" and click on the multibootusb icon.
-            * Under Linux a password window will popup for user input. Provide sudo password. If you are running as root 
-            then no window will popup.
-        * Once multibootusb is opened you can see the list of USB disk on the combobox close to **Step 1**.The USB details are listed 
-        below "Refresh USB" button. Review it and choose the disk of your desire.
-        * Use the "Refresh USB" button to detect USB disks if you have inserted the disk after opening multibootusb GUI.
-    * **Step 2**
-        * Now the **Step 1** is over and proceed to **Step 2**. Clicking on "Browse ISO" button should bring file chooser dialog 
-        and you can choose your live Linux. The choosen live Linux path will be available in the line edit for your view.
-    * **Step 3**
-        * The third and final step is to simply click on "Create" button available close to **Step 3** text. multibootusb will 
-         analyse the ISO and check if ISO is supported. 
-        * If the live Linux is supported then a "Review Selection" window will appear and wait for your confirmation. 
-        The review window will indicate the selected USB disk, mount path of the disk and a selected ISO. You can create 
-        live USB disk by clicking "Yes" button on the review selection window.
-        * The progress bar will indicate the progress on live Linux installation. The text label just above the progress bar 
-        will indicate the current operation of the installation process (like Extracting some file...).
-        * You will get the completion message after successful installation of live Linux. Now the installation is 
-        complete and you can reboot to live Linux after setting your BIOS to boot from USB disk.
-        * After successful install, the installed distro is displayed in the list box, seen on the left side of GUI. 
-        The list box will list all the distros installed via multibootusb every time you open multibootusb. 
+* Creating bootable live Linux on a USB disk essentially involves three steps:-
 
-## Adding new/additional live Linux:
-* Adding addition and new live linux is simple process. Just follow the **Step 1**, **Step 2** and **Step 3** mentioned in the
-     **Creating live linux on USB disk** section above. 
+  1. Step 1 	:	Insert USB disk and start the program
+  2. Step 2	    :	Choose your ISO
+  3. Step 3.	:	Click on Install distro push button.
+  
+  Read the detailed instruction with screenshots below for further reading.
 
-## Removing/Uninstalling distro:
-* You can only uninstall distros installed by multibootusb. 
-* To do that you must select a disto from the list and choose "Uninstall Distro" button. A Review Selection window will 
-popup and ask you to confirm. Click on the Yes btton to remove installed distro. The progress bar will indicate the 
-progress of the uninstall process. You will get the completion message after successful uninstall of the selected distro.
+* **Step 1**
+	* Insert USB disk and wait for few seconds so that Operating System can detect it.
+	
+	<div style="text-align:center"><img src ="../img/select-usb-disk.png" /></div>
+		
+	* `Linux:` All modern Linux distros should mount USB disks automatically after insertion. MultiBootUSB also has function to auto mount USB drive. 
+		However, if you still find your USB disk is not mounted, then open file manager and 
+		click on the USB disk icon to mount it. 
+		
+	* `Windows:` Open multibootusb under `Start --> Program Files --> multibootusb --> Click multibootusb`
+	
+	    `Linux`: MultiBooUSB can be found under `system menu`. On Ubuntu click on `Dash --> type "multibootusb"` and click on the multibootusb icon.
+		For GNOME3 based distros, select `Activities overview` and type `multibootusb` and click on the multibootusb icon. 
+		
+		* If you are running as normal user, a password window will popup for user input. Provide sudo password.
+		 
+	* Once multibootusb GUI is opened, you can see the list of USB disk in the combobox close to **Select USB disk** text. You can find the details of currently selected USB disks just below combobox.
+	
+	* Use the `Detect Drives` button to detect USB disks if you have inserted the disk after opening multibootusb GUI.
+	
+	* You can click on `All Drives` option to show all connected drives. You must be careful with option. 
+	  
+	 
+* **Step 2**
+	* Clicking on `Browse` button located next to `select image` text, should bring file chooser dialog. Navigate to 
+	choose an ISO. The chosen ISO path will be available in the line edit for your review.
+	
+	<div style="text-align:center"><img src ="../img/browse-iso.png" /></div>
+	
+* **Step 3**
+	* The third and final step is to simply click on `Install distro` button. multibootusb will 
+	 analyse the ISO and check if ISO is supported by the program.
+	  
+	 <div style="text-align:center"><img src ="../img/install-distro.png" /></div>
+	 
+	* If the live Linux is supported then a `Review Selection` window will appear and wait for your confirmation. 
+	The review window will indicate the selected USB disk, mount path of the disk and a the name of a selected ISO.
+	 
+	* Choose **Yes** if you are OK with the selections.
+	
+	<div style="text-align:center"><img src ="../img/review-selection.png" /></div>   
+	
+	* Wait for a moment for program to installation ISO on a disk. If your installation is success, name os an ISO 
+	should appear in the listbox. The list box will list all the distros installed via multibootusb every time you open multibootusb.
+	
+	<div style="text-align:center"><img src ="../img/install-progress.png" /></div>
+	---
+	<div style="text-align:center"><img src ="../img/install-success.png" /></div>
+	---
+	<div style="text-align:center"><img src ="../img/install-distro-list.png" /></div>
+
+---
+
+## Adding an additional live Linux:
+* You can follow **Step 1**, **Step 2** and **Step 3** mentioned above for adding a new distro agan.
+
+---
+
+## Removing or uninstalling distro:
+* You can only uninstall distros installed by multibootusb.
+
+ <div style="text-align:center"><img src ="../img/remove-distro.png" /></div>
  
+* To do that you must select a disto from the list of installed distros and choose "Uninstall Distro" button. A Review Selection window will 
+popup and ask you to confirm. 
+
+* Click on the Yes btton to remove installed distro. The progress bar will indicate the 
+progress of the uninstall process. You will get the completion message after successful uninstall of the selected distro.
+
+---
+
 ## Reinstalling Syslinux:
-* There might be a situation you may want to install syslinux for various reasons like using other live usb creator will 
-remove syslinux installation performed by multibootusb. In such a situation you can reinstall syslinux using syslinux tab.
-* Go to Syslinu tab --> Install Syslinux section --> Choose any of the method listed and click on "Install" button.
-* This will install syslinux on multibootusb directory in a selected USB disk.
+* There may be a situation you want to install syslinux for various reasons like using other live usb creator will 
+remove syslinux installation performed by multibootusb. In such cases situation you can reinstall syslinux using syslinux tab.
+
+<div style="text-align:center"><img src ="../img/install-syslinux.png" /></div>
+
+* Go to `Install Syslinux`, choose an USB disk partition (eg. **/dev/sdb1**), choose method and click on **Install** button.
+
+* This will install syslinux on **multibootusb** directory in a selected USB disk.
+
+---
 
 ## Edit Syslinux config files:
- * Please perform this action with caution. Any change in the path will make your distro install completely useless. 
+
+ * Please perform this action with caution. Any change in the path will make your distro install completely useless.   
+ 
  * You can view and edit syslinux.cfg file located under multibootusb directory using the feature provided with multibootusb.
-    Syslinu tab --> Edit Syslinux.cfg section --> Click on "Edit" button. This action will open syslinux.cfg in a text editor.
-    
+    `Install Syslinux --> Edit Syslinux.cfg --> Click on Edit` button. This action will open syslinux.cfg in a default text 
+    editor for your review.
+
+---
+
 ## Test your ISO and USB with QEMU option:
  * Testing your downloaded ISO and USB installation is useful as need of rebooting your system is not required. multibootusb provides 
  an option to do this as well. 
- * QEMU binaries are shipped with Windows as default. But for Linux you need to install "qemu" package to avail this feature.  
+ 
+ * QEMU binaries are shipped with Windows setup file by default. But for Linux you need to install "qemu" package to avail this feature.  
   
-    **Booting ISO**
-     
-     * Go to --> QEMU tab --> Boot ISO section --> Click on Browse ISO to choose an ISO file.
-     * Then choose your desired ram size and click on Boot ISO button.
-     * Your ISO will boot in a new separate window. 
+  <div style="text-align:center"><img src ="../img/boot-qemu.png" /></div>
+  
+   **Booting ISO**
+   
+   <div style="text-align:center"><img src ="../img/boot-qemu-iso.png" /></div>
+   
+   * Go to `Boot ISO/USB --> Browse ISO --> Choose RAM size --> Click on Boot ISO`.
+   
+   * Your ISO will boot in a separate window.
+   
+   * Maximum RAM size supported as of now limited to 2GB.
+   
       
-    **Booting USB**
+   **Booting USB**
+   
+   <div style="text-align:center"><img src ="../img/boot-qemu-usb.png" /></div>
      
-     * Booting USB also similar to booting ISO as mentioned above. 
-     * Go to --> QEMU tab --> Boot USB section.
-     * Then choose your desired ram size and click on Boot USB button.
-     * Your USB as listed in the combobox (in **Step 1**) will boot in a new separate window. 
+   * Booting USB also similar to booting ISO as mentioned above. 
+   
+   * Go to `Boot ISO/USB --> Select USB Disk --> Choose RAM size --> Click on Boot USB`.
+   
+   * Your USB disk as listed in the combobox will boot in a separate window.
+   
+   * `Linux:` You must select the whole disk (**/dev/sdb**) and not the device partition.
 
-### Author
- * Sundar.
+---

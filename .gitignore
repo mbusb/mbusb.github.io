@@ -10,3 +10,10 @@ ehthumbs.db
 
 # Download Stats count
 ghstats.py
+
+# Files created by pycharm
+.idea*
+
+# Backup files
+
+*bak.md
