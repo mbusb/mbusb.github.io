@@ -26,6 +26,7 @@ navbar-links:
   Features: "page_features"
   Download: "page_download"
   Guide: "page_guide"
+  FAQ: "page_faq"
   News: "news"
   Contact: "page_contact"
   
@@ -54,7 +55,7 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: false
   email: true
   twitter: false

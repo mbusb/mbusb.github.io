@@ -14,10 +14,15 @@ group:      navigation
 [Install  MultiBootUSB - Windows and Linux](#installation)  
 [Creating live linux on USB disk](#creating-live-linux-on-usb-disk)  
 [Adding new/additional live Linux](#adding-an-additional-live-linux)  
-[Removing or Uninstalling a distro](#removing-or-uninstalling-distro)    
+[Adding Persistence file](#adding-persistence-file)  
+[Removing or Uninstalling a distro](#removing-or-uninstalling-distro)  
+[Write ISO image directly to USB disk](#writing-iso-directly-to-usb-disk)   
 [Reinstalling Syslinux](#reinstalling-syslinux)   
 [Edit Syslinux config files](#edit-syslinux-config-files)   
-[Test ISO and USB with QEMU option](#test-your-iso-and-usb-with-qemu-option)
+[Test ISO and USB with QEMU option](#test-your-iso-and-usb-with-qemu-option)  
+[Using mltibootusb command line options](#using-mltibootusb-command-line-options)  
+[What if something goes wrong?](#what-if-something-goes-wrong)
+
 
 ---
 
@@ -135,6 +140,29 @@ MultiBootUSB allows you to do the following:
 
 ---
 
+## Adding persistence file:
+* Only distros based on Ubunt, Fedora and Debain are supported.  
+
+* Once you complete the **step 2** (Choose an ISO), multibootusb will detect the type of
+distro and a persistence size chooser slider would appear below MultiBootUSB tab. 
+ The maximum size of the persistence also automatically calculated according to the USB disk filesystem.
+
+<div style="text-align:center"><img src ="../img/persistence-bar.png" /></div>
+
+* Choose the desired persistence size by dragging the slider to right and follow the **Step 3** as usual.
+
+* Once distro installes successfully, you will find the additional persistence file under distro install directory.
+
+<div style="text-align:center"><img src ="../img/applying-persistence.png" /></div>   
+
+
+* Reboot your system to choose your favourite distro as persistence menu will be added automatically to menu entry.
+
+
+Note: Few users have reported that Debian persistence option does'nt work properly.
+
+---
+
 ## Removing/uninstalling distro:
 * You can only uninstall distros installed by multibootusb.
 
@@ -143,6 +171,32 @@ MultiBootUSB allows you to do the following:
 * Select disto from the list and click `Uninstall Distro`.
 
 * You will be notified after successful uninstallation.
+
+---
+
+## Writing ISO directly to USB disk:
+
+`Be warned that this method will destroy all data on target USB disk.`  
+
+* multibootusb also has an option to write ISO file directly to an USB disk.
+ You can choose this option if any of the above method fails to create live usb disk.
+
+* You can think of this method as a GUI to the famous `dd` program under Linux. In fact, it actually uses `dd`
+ program for writing to disk.
+ 
+ <div style="text-align:center"><img src ="../img/write-image-to-disk.png" /></div>
+ 
+ * To write to USB disk, you need to choose, the USB disk, ISO image and click on the 
+ `Write image to disk` push button available under **Write image to disk** tab.
+ 
+ * A review window will appear for confirmation and select yes to proceed. Once selected, ISO writing will start and progress will be indicated in progressbar.
+ 
+ <div style="text-align:center"><img src ="../img/imager-progress.png" /></div>
+ 
+ * Please note that you need to select the whole disk `/dev/sdb` and not he device partition `/dev/sdb1`.
+ 
+ * You need to format the USB disk if you have to revert back to original state and start using nondestructive method. 
+ 
 
 ---
 
@@ -195,4 +249,72 @@ remove syslinux installation performed by multibootusb). In such cases situation
    
    * `Linux:` You must select the whole disk (e.g. **/dev/sdb**) and **NOT** the device partition (e.g. **/dev/sdb1**).
 
+---
+
+## Using mltibootusb command line options
+
+ * You can invoke command line options using `multibootusb -c`.
+ * Windows users must use source code to avail this option.
+ * Here is the text retrieved using `multibootusb -c -h` command and 
+ ensure to run with admin privilege:
+ 
+```sh
+An advanced multiboot live usb creator which can be used from the command line
+or via a GUI.
+
+ Usage: python3 multibootusb [option(s)]
+
+Options:
+  -h or --help        :   Print this help message and exit
+  -c or --command     :   Invoke command line usage.  This option is required;
+                          if omitted, the GUI will be launched.
+  -i or --iso         :   Path to ISO file(s).  If many ISOs are supplied,
+                          they should be separated by ',' with no spaces in
+                          between.
+  -t or --target      :   Path to target USB device partition (e.g. "/dev/sdb1").
+  -y or --yes         :   Default yes for user input during install.
+                          Will not wait for user.
+  -u or --uninstall   :   List and uninstall distro from an USB disk.
+  -d or --debug       :   Enable debug messages (very verbose!)
+
+```
+
+Example for making a bootable USB from the command line:
+
+```sh
+Linux:
+    python3 multibootusb -c -i ../../favourite.iso -t /dev/sdb1
+
+Windows:
+    python3 multibootusb -c -i ../../favourite.iso -t G:
+```
+
+Example for uninstalling a distro from a USB:
+
+```sh
+Linux:
+    python3 multibootusb -c -u -t /dev/sdb1
+
+Windows:
+    python3 multibootusb -c -u -t G:
+```
+
+Example for installing multiple distros without user intervention:
+
+```sh
+Linux:
+    python3 multibootusb -c -y -i ../../favourite.iso,../../other-distro.iso -t /dev/sdb1
+
+Windows:
+    python3 multibootusb -c -i ../../favourite.iso,../../other-distro.iso -t G:
+
+```
+
+---
+
+## What if something goes wrong?
+
+ * Check if your issue is addressed in the Frequently Asked Section (FAQ) [here](http://multibootusb.org/page_faq) .
+ * If not raise an issue at [Github Issue Tracker](https://github.com/mbusb/multibootusb/issues)
+ 
 ---
