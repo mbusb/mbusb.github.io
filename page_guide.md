@@ -141,7 +141,7 @@ MultiBootUSB allows you to do the following:
 ---
 
 ## Adding persistence file:
-* Only distros based on Ubunt, Fedora and Debain are supported.  
+* Only distros based on Ubuntu, Fedora and Debain are supported.  
 
 * Once you complete the **step 2** (Choose an ISO), multibootusb will detect the type of
 distro and a persistence size chooser slider would appear below MultiBootUSB tab. 
