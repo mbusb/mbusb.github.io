@@ -28,7 +28,7 @@ subtitle: Some highlights...
 </div>
 <div class="col-md-8" style="text-align: left; vertical-align: middle;">
 <h4 style="text-align: center;"></h4>
-<p style="text-align: justify;">MultiBootUSB is released under General Public Licence (GPL). Anybody can use, modify and redistribute if they wish. It is also build using the best of open source softwares from the world. Be it Python or Syslinux you get the best. Source code is always <a href="/web/20160403071103/https://github.com/mbusb/multibootusb">available</a> to users to view.</p>
+<p style="text-align: justify;">MultiBootUSB is released under General Public Licence (GPL). Anybody can use, modify and redistribute if they wish. It is also build using the best of open source softwares from the world. Be it Python or Syslinux you get the best. Source code is always <a href="https://github.com/mbusb/multibootusb">available</a> to users to view.</p>
 </div>
 </div>
 </div>
