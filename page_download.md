@@ -7,18 +7,18 @@ noToc:		true
 group: 		navigation
 ---
 
-### Current Release: 9.0.0
+### Current Release: 9.1.0
 
 ___
 
 **Github**
 
-- <span class="fa fa-2x fa-windows"></span>&nbsp; [multibootusb-9.0.0-setup.exe](https://github.com/mbusb/multibootusb/releases/download/v9.0.0/multibootusb-9.0.0-setup.exe) - Windows setup file
-- <span class="fa fa-2x fa-linux"></span>&nbsp; [python3-multibootusb_9.0.0-1_all.deb](https://github.com/mbusb/multibootusb/releases/download/v9.0.0/python3-multibootusb_9.0.0-1_all.deb) - Debian / Ubuntu Package
-- <span class="fa fa-2x fa-linux"></span>&nbsp; [multibootusb-9.0.0-1.noarch.rpm](https://github.com/mbusb/multibootusb/releases/download/v9.0.0/multibootusb-9.0.0-1.noarch.rpm) - RPM based distros (Fedora and its derivatives)
-- <span class="fa fa-2x fa-linux"></span>&nbsp; [multibootusb-9.0.0-1suse.noarch.rpm](https://github.com/mbusb/multibootusb/releases/download/v9.0.0/multibootusb-9.0.0-1suse.noarch.rpm) - RPM based distros (Open Suse and its derivatives)
-- <span class="fa fa-2x fa-linux"></span>&nbsp; [multibootusb-9.0.0-1mageia.noarch.rpm](https://github.com/mbusb/multibootusb/releases/download/v9.0.0/multibootusb-9.0.0-1mageia.noarch.rpm) - RPM based distros (Mageia and its derivatives)
-- <span class="fa fa-2x fa-file-zip-o"></span>&nbsp; [multibootusb-9.0.0.tar.gz](https://github.com/mbusb/multibootusb/archive/v9.0.0.tar.gz) - Source .tar.zip file
+- <span class="fa fa-2x fa-windows"></span>&nbsp; [multibootusb-9.1.0-setup.exe](https://github.com/mbusb/multibootusb/releases/download/v9.1.0/multibootusb-9.1.0-setup.exe) - Windows setup file
+- <span class="fa fa-2x fa-linux"></span>&nbsp; [python3-multibootusb_9.1.0-1_all.deb](https://github.com/mbusb/multibootusb/releases/download/v9.1.0/python3-multibootusb_9.1.0-1_all.deb) - Debian / Ubuntu Package
+- <span class="fa fa-2x fa-linux"></span>&nbsp; [multibootusb-9.1.0-1.noarch.rpm](https://github.com/mbusb/multibootusb/releases/download/v9.1.0/multibootusb-9.1.0-1.noarch.rpm) - RPM based distros (Fedora and its derivatives)
+- <span class="fa fa-2x fa-linux"></span>&nbsp; [multibootusb-9.1.0-1suse.noarch.rpm](https://github.com/mbusb/multibootusb/releases/download/v9.1.0/multibootusb-9.1.0-1suse.noarch.rpm) - RPM based distros (Open Suse and its derivatives)
+- <span class="fa fa-2x fa-linux"></span>&nbsp; [multibootusb-9.1.0-1mageia.noarch.rpm](https://github.com/mbusb/multibootusb/releases/download/v9.1.0/multibootusb-9.1.0-1mageia.noarch.rpm) - RPM based distros (Mageia and its derivatives)
+- <span class="fa fa-2x fa-file-zip-o"></span>&nbsp; [multibootusb-9.1.0.tar.gz](https://github.com/mbusb/multibootusb/archive/v9.1.0.tar.gz) - Source .tar.zip file
 
 **Unofficial package builds for various distros**
 
@@ -33,7 +33,7 @@ Remember, these packages and builds are not maintained officially. You must cont
 
 **Sourceforge**
 
-Alternate download location for various platform is located [here](https://sourceforge.net/projects/multibootusb/files/9.0.0/)
+Alternate download location for various platform is located [here](https://sourceforge.net/projects/multibootusb/files/9.1.0/)
 
 
 ___
