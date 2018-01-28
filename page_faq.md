@@ -11,15 +11,15 @@ group:      navigation
 
 [What should I do if I get a message `"Sorry. xyz.iso is not supported at the moment"`?](#what-should-i-do-if-i-get-a-iso-not-supported-error-message)      
 [Where is multibootusb log file located?](#where-is-multibootusb-log-file-located)   
-[Can you help me in adding my favourite disto in to multibootusb?](#can-you-help-me-in-adding-my-favourite-disto-in-to-multibootusb)    
-[Live USB created using multibootusb works perfectly. But I cant install in to hard disk](#cant-install-live-usb-created-using-multibootusb-in-to-hard-disk)      
+[Can you help me in adding my favourite distro in to multibootusb?](#can-you-help-me-in-adding-my-favourite-distro-in-to-multibootusb)    
+[Live USB created using multibootusb works perfectly. But I cant install in to hard disk](#i-cant-install-live-usb-created-using-multibootusb-on-to-my-computers-hard-disk)      
 [Does multibootusb support exFAT file system?](#does-multibootusb-support-exfat-file-system)  
 [Does multibootusb support GRUB boot loader?](#does-multibootusb-support-grub-boot-loader)  
 [Does multibootusb support EFI/UEFI booting?](#does-multibootusb-support-efi-or-uefi-booting)  
 [Does multibootusb support persistence?](#does-multibootusb-support-persistence)  
 [Your package for my favourite distro never worked for me. What can I do now](#your-package-for-my-favourite-distro-never-worked-for-me-what-can-i-do-now)        
 [Is there a support for command line option instead of GUI?](#is-there-a-support-for-command-line-option-instead-of-gui)  
-[Error when installing Debian 'No common CD-ROM drive was detected'](#debiann-no-common-cd-rom-drive-was-detected)       
+[Debian error "no common CD ROM drive was detected" during installation](#debian-error--no-common-CD-ROM-drive-was-detected--during-installation)       
 [I found a bug and would like to submit a patch. How do I do that](#i-found-a-bug-and-would-like-to-submit-a-patch-how-do-i-do-that)     
 [How often multibootusb is released?](#how-often-multibootusb-is-released)   
 [How do you give version number to each release?](#how-do-you-give-version-number-to-each-release)  
@@ -128,7 +128,7 @@ group:      navigation
 
 ---
 
-## Debian says "no common CD ROM drive was detected"
+## Debian error "no common CD ROM drive was detected" during installation
 
  * Any type of errors related to hardware install are relevant scope of the multibootusb project.
  * However, there is an user solved this issue successfully. You can refer [this](https://github.com/mbusb/multibootusb/issues/85) link to overcome this issue.
