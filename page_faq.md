@@ -42,7 +42,7 @@ group:      navigation
 
 ---
 
-## Can you help me in adding my favourite disto in to multibootusb?
+## Can you help me in adding my favourite distro in to multibootusb?
 
  * Yes I can. But you have to help me to help you. Simply saying "my distro xyz.iso is not working" does not convey anything. 
  I need **at least** the following information to try from my side:
@@ -57,7 +57,7 @@ group:      navigation
 
 ---
 
-## I can't install Live USB created using multibootusb on to my ccomputer's hard disk.
+## I can't install Live USB created using multibootusb on to my computer's hard disk.
 
  * I can't do anything about it.
  * The main purpose of multibootusb is to create (multiple) live Linux and able to boot from it.
