@@ -1,7 +1,7 @@
 ---
 layout: 	page
 title:      FAQ
-subtitle: 	Answers for most asked questions...
+subtitle: 	Answers for the most commonly asked questions...
 comments:   false
 noToc:      true
 group:      navigation
@@ -29,9 +29,9 @@ group:      navigation
 
 ## What should I do if I get a iso not supported error message?
 
- * [Read this information carefully](#can-you-help-me-in-adding-my-favourite-disto-in-to-multibootusb)
+ * [Read this information carefully](#can-you-help-me-in-adding-my-favourite-disto-in-to-multibootusb).
  * You can submit this issue in github page at [https://github.com/mbusb/multibootusb/issues](https://github.com/mbusb/multibootusb/issues). 
- * It is OK to send it on email but avoid it. The github issue will remind me of pending work or someone else can also can read and solve your issue. 
+ * It is OK to send it on email but it is not reccommended. The github issue will remind me of pending work or someone else can also can read and solve your issue. 
 
 ---
 
@@ -44,22 +44,22 @@ group:      navigation
 
 ## Can you help me in adding my favourite disto in to multibootusb?
 
- * Yes I can. But you have to help me to help you. Simply saying my disto xyz.iso is not working does not convey anything. 
- I need at least following **minimum** information to try from my side:
+ * Yes I can. But you have to help me to help you. Simply saying "my distro xyz.iso is not working" does not convey anything. 
+ I need **at least** the following information to try from my side:
    1. Host Operating system information (Linux/ Windows) and version.
    2. The ISO your are trying to create and ISO download link.
    3. USB disk information such as partition type, size, file system and so on.
    4. MultiBootUSB version you are using. 
-   5. More importantly you should provide the log file when raising an issue.
+   5. More importantly, you should provide the log file when raising an issue.
    6. Any other information, not listed above, you feel will help me in figure out your issue.
  
  * Once you have all the information head over to [https://github.com/mbusb/multibootusb/issues](https://github.com/mbusb/multibootusb/issues) and raise a new issue.
 
 ---
 
-## Cant install Live USB created using multibootusb in to hard disk.
+## I can't install Live USB created using multibootusb on to my ccomputer's hard disk.
 
- * I cant do anything about it.
+ * I can't do anything about it.
  * The main purpose of multibootusb is to create (multiple) live Linux and able to boot from it.
  * Installing from USB is not the scope of this project. 
 
@@ -85,8 +85,8 @@ group:      navigation
 
 ## Does multibootusb support EFI or UEFI booting?
 
- * Yes. But limited support.
- * It supports through GRUB2 bootloader.
+ * Yes, but with limited support.
+ * It is supported through the use of the GRUB2 bootloader.
  * Reason for limited support being that the menu entries for GRUB2 are generated/converted using
  syslinux config files. Some menu options specially available for syslinux does not have support under GRUB2.
 
@@ -128,7 +128,7 @@ group:      navigation
 
 ---
 
-## Debiann no common CD ROM drive was detected
+## Debian says "no common CD ROM drive was detected"
 
  * Any type of errors related to hardware install are relevant scope of the multibootusb project.
  * However, there is an user solved this issue successfully. You can refer [this](https://github.com/mbusb/multibootusb/issues/85) link to overcome this issue.
@@ -139,7 +139,7 @@ group:      navigation
 
  * You are most welcome to submit a patch.
  * Before submitting a patch, ensure that the code is well tested and does not break 
- away the existing functionality.
+ existing functionality.
  * Then submit a pull request on [devel branch](https://github.com/mbusb/multibootusb/tree/devel)
  * You can also send patch files directly through email. I will integrate in to main repo later post testing.
  
@@ -162,7 +162,7 @@ group:      navigation
 
 ## Your english is pathetic.  
 
- * Fully agree with you. But I cant help.
+ * Fully agree with you. But I can't help that.
  * You are most welcome to correct it and send to me for improving.
 
 ---
