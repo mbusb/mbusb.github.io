@@ -19,7 +19,7 @@ group:      navigation
 [Does multibootusb support persistence?](#does-multibootusb-support-persistence)  
 [Your package for my favourite distro never worked for me. What can I do now](#your-package-for-my-favourite-distro-never-worked-for-me-what-can-i-do-now)        
 [Is there a support for command line option instead of GUI?](#is-there-a-support-for-command-line-option-instead-of-gui)  
-[Debian error "no common CD ROM drive was detected" during installation](#debian-error--no-common-CD-ROM-drive-was-detected--during-installation)       
+[Debian error "no common CD ROM drive was detected" during installation](#debian-error-no-common-cd-rom-drive-was-detected-during-installation)       
 [I found a bug and would like to submit a patch. How do I do that](#i-found-a-bug-and-would-like-to-submit-a-patch-how-do-i-do-that)     
 [How often multibootusb is released?](#how-often-multibootusb-is-released)   
 [How do you give version number to each release?](#how-do-you-give-version-number-to-each-release)  
