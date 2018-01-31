@@ -1,11 +1,11 @@
 ---
-layout: 	page
+layout: page
 title:      FAQ
-subtitle: 	Answers for the most commonly asked questions...
-comments:   false
-noToc:      true
-group:      navigation
-​---   
+subtitle: Answers for the most commonly asked questions...
+comments:	false
+noToc:		true
+group: 		navigation
+---
 
 ## Table of content:
 
@@ -23,7 +23,6 @@ group:      navigation
 [I found a bug and would like to submit a patch. How do I do that](#i-found-a-bug-and-would-like-to-submit-a-patch-how-do-i-do-that)     
 [How often multibootusb is released?](#how-often-multibootusb-is-released)   
 [How do you give version number to each release?](#how-do-you-give-version-number-to-each-release)  
-[Your english is pathetic](#your-english-is-pathetic)  
 
 ---
 
@@ -44,14 +43,13 @@ group:      navigation
 
 ## Can you help me in adding my favourite distro in to multibootusb?
 
- * Yes I can. But you have to help me to help you. Simply saying "my distro xyz.iso is not working" does not convey anything. 
-    I need **at least** the following information to try from my side:
-        1. Host Operating system information (Linux/ Windows) and version.
-        2. The ISO your are trying to create and ISO download link.
-        3. USB disk information such as partition type, size, file system and so on.
-        4. MultiBootUSB version you are using. 
-        5. More importantly, you should provide the log file when raising an issue.
-        6. Any other information, not listed above, you feel will help me in figure out your issue.
+ * Yes I can. But you have to help me to help you. Simply saying "my distro xyz.iso is not working" does not convey anything. I need **at least** the following information to try from my side:  
+        1. Host Operating system information (Linux/ Windows) and version.   
+        2. The ISO your are trying to create and ISO download link.   
+        3. USB disk information such as partition type, size, file system and so on.   
+        4. MultiBootUSB version you are using.   
+        5. More importantly, you should provide the log file when raising an issue.   
+        6. Any other information, not listed above, you feel will help me in figure out your issue.   
 
  * Once you have all the information head over to [https://github.com/mbusb/multibootusb/issues](https://github.com/mbusb/multibootusb/issues) and raise a new issue.
 
@@ -104,49 +102,36 @@ group:      navigation
  **On Linux:**
 ​    
    * multibootusb depends on the following packages under Linux: 
-
       * python3-pyqt5 
-
       * p7zip-full 
-
       * parted  
-
       * util-linux  
-
       * python3-pyudev 
-
       * mtools
-
       * python3-dbus 
-
       * python3-six 
 
    * Install above packages using your package manager. Remember that package name may not be identical for all distros. You need to search equivalent package for your distro and install it.
-    * `You must uninstall your previous installation of multibootusb, if you have done it earlier.`
-    * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
-    * Extract to local directory and move in to `multibootusb` directory.
-    * Issue `sudo python3 ./multibootusb` command to start GUI
+   * `You must uninstall your previous installation of multibootusb, if you have done it earlier.`   
+   * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
+   * Extract to local directory and move in to `multibootusb` directory.
+   * Issue `sudo python3 ./multibootusb` command to start GUI
 
  **On Windows:**
 ​    
    * Download and install following packages:
        * [Python 3](https://www.python.org/downloads/windows/). I use python version 3.5 but it should work on higher versions as well.
-
        * [PyQt5](https://www.riverbankcomputing.com/software/pyqt/download5) and installation instruction are [here](http://pyqt.sourceforge.net/Docs/PyQt5/installation.html)
-
        * [wmi](https://pypi.python.org/pypi/WMI) module
-
        * [pywin32](https://pypi.python.org/pypi/pywin32)
-
        * [psutils](https://pypi.python.org/pypi/psutil)
-
        * [Git](https://git-scm.com/download/win), if you wish to contribute back to multibootusb project
 
    * `Installation and configuration of above packages/ modules is not a part of this documentation. You must use Google for that.`
-    * If you have installed python correctly on windows, it is recommanded that you use `pip3.exe` for installing above packages.
-    * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
-    * Open command prompt with admin privilage and move in to `multibootusb` directory.
-    * Issue `python3.exe multibootusb` command to start GUI
+   * If you have installed python correctly on windows, it is recommanded that you use `pip3.exe` for installing above packages.
+   * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
+   * Open command prompt with admin privilage and move in to `multibootusb` directory.
+   * Issue `python3.exe multibootusb` command to start GUI
 
 ---
 
@@ -186,12 +171,5 @@ group:      navigation
  * This is based on various factors.
  * If it is only minor bug release, then the release will have minor version number. 
  * Version will be major if more distros, newer functinality and major change to code etc are added.
-
----
-
-## Your english is pathetic.  
-
- * Fully agree with you. But I can't help that.
- * You are most welcome to correct it and send to me for improving.
 
 ---

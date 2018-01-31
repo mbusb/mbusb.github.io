@@ -1,13 +1,14 @@
 ---
-layout: 	page
+layout: page
 title:      Guide
-subtitle: 	Learn how to use MultiBootUSB...
-comments:   false
-noToc:      true
-group:      navigation
-​---   
+subtitle: Learn how to use MultiBootUSB...
+comments:	false
+noToc:		true
+group: 		navigation
+---
 
-## Table of content:
+## Table of content:  
+
 
 [What does multibootusb do?](#what-does-multibootusb-do)  
 [Minimum Requirements](#requirements)  
@@ -22,7 +23,6 @@ group:      navigation
 [Test ISO and USB with QEMU option](#test-your-iso-and-usb-with-qemu-option)  
 [Using mltibootusb command line options](#using-mltibootusb-command-line-options)  
 [What if something goes wrong?](#what-if-something-goes-wrong)
-
 
 ---
 
@@ -86,16 +86,11 @@ MultiBootUSB allows you to do the following:
      * Download and install following packages: 
 
         * [Python 3](https://www.python.org/downloads/windows/). I use python version 3.5 but it should work on higher versions as well. 
-
         * [PyQt5](https://www.riverbankcomputing.com/software/pyqt/download5) and installation instruction are [here](http://pyqt.sourceforge.net/Docs/PyQt5/installation.html)
-
         * [wmi](https://pypi.python.org/pypi/WMI) module
-
         * [pywin32](https://pypi.python.org/pypi/pywin32)
-
         * [psutils](https://pypi.python.org/pypi/psutil)
-
-        * [Git](https://git-scm.com/download/win), if you wish to contribute back to multibootusb project 
+        * [Git](https://git-scm.com/download/win), if you wish to contribute back to multibootusb project
 
     * `Installation and configuration of above packages/ modules is not a part of this documentation. You must use Google for that.`
      * If you have installed python correctly on windows, it is recommanded that you use `pip3.exe` for installing above packages.
