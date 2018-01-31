@@ -5,7 +5,7 @@ subtitle: 	Answers for the most commonly asked questions...
 comments:   false
 noToc:      true
 group:      navigation
----   
+​---   
 
 ## Table of content:
 
@@ -45,14 +45,14 @@ group:      navigation
 ## Can you help me in adding my favourite distro in to multibootusb?
 
  * Yes I can. But you have to help me to help you. Simply saying "my distro xyz.iso is not working" does not convey anything. 
- I need **at least** the following information to try from my side:
-   1. Host Operating system information (Linux/ Windows) and version.
-   2. The ISO your are trying to create and ISO download link.
-   3. USB disk information such as partition type, size, file system and so on.
-   4. MultiBootUSB version you are using. 
-   5. More importantly, you should provide the log file when raising an issue.
-   6. Any other information, not listed above, you feel will help me in figure out your issue.
- 
+    I need **at least** the following information to try from my side:
+      1. Host Operating system information (Linux/ Windows) and version.
+      2. The ISO your are trying to create and ISO download link.
+      3. USB disk information such as partition type, size, file system and so on.
+      4. MultiBootUSB version you are using. 
+      5. More importantly, you should provide the log file when raising an issue.
+      6. Any other information, not listed above, you feel will help me in figure out your issue.
+
  * Once you have all the information head over to [https://github.com/mbusb/multibootusb/issues](https://github.com/mbusb/multibootusb/issues) and raise a new issue.
 
 ---
@@ -88,7 +88,7 @@ group:      navigation
  * Yes, but with limited support.
  * It is supported through the use of the GRUB2 bootloader.
  * Reason for limited support being that the menu entries for GRUB2 are generated/converted using
- syslinux config files. Some menu options specially available for syslinux does not have support under GRUB2.
+    syslinux config files. Some menu options specially available for syslinux does not have support under GRUB2.
 
 ---
 
@@ -100,9 +100,9 @@ group:      navigation
 ---
 
 ## Your package for my favourite distro never worked for me. What can I do now?
- 
+
  **On Linux:**
-    
+​    
    * multibootusb depends on the following packages under Linux: 
 
       * python3-pyqt5 
@@ -121,7 +121,6 @@ group:      navigation
 
       * python3-six 
 
-
     * Install above packages using your package manager. Remember that package name may not be identical for all distros. You need to search equivalent package for your distro and install it.
     * `You must uninstall your previous installation of multibootusb, if you have done it earlier.`
     * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
@@ -129,7 +128,7 @@ group:      navigation
     * Issue `sudo python3 ./multibootusb` command to start GUI
 
  **On Windows:**
-    
+​    
    * Download and install following packages:
 
        * [Python 3](https://www.python.org/downloads/windows/). I use python version 3.5 but it should work on higher versions as well.
@@ -143,13 +142,13 @@ group:      navigation
        * [psutils](https://pypi.python.org/pypi/psutil)
 
        * [Git](https://git-scm.com/download/win), if you wish to contribute back to multibootusb project
-      
+
     * `Installation and configuration of above packages/ modules is not a part of this documentation. You must use Google for that.`
     * If you have installed python correctly on windows, it is recommanded that you use `pip3.exe` for installing above packages.
     * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
     * Open command prompt with admin privilage and move in to `multibootusb` directory.
     * Issue `python3.exe multibootusb` command to start GUI
- 
+
 ---
 
 ## Is there a support for command line option instead of GUI?
@@ -170,10 +169,10 @@ group:      navigation
 
  * You are most welcome to submit a patch.
  * Before submitting a patch, ensure that the code is well tested and does not break 
- existing functionality.
+    existing functionality.
  * Then submit a pull request on [devel branch](https://github.com/mbusb/multibootusb/tree/devel)
  * You can also send patch files directly through email. I will integrate in to main repo later post testing.
- 
+
 ---
 
 ## How often multibootusb is released?
