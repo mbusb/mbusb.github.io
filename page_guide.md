@@ -62,17 +62,38 @@ MultiBootUSB allows you to do the following:
     * Packages for various distros available [here](http://multibootusb.org/page_download/)
     
     **...or from source code:**
-    
-    * The install.py script provided with multibootusb should take care of all dependencies and install multibootusb.
-    Assuming that you have downloaded the archive named **multibootusb.tar.gz** in your home directory, issue the 
-	following commands to install multibootusb:
 
-```sh
-    tar -zxf ./multibootusb.tar.gz
-    cd multibootusb
-    chmod +x ./install.py   
-    sudo ./install.py
-``` 
+    ** On Linux: **
+    
+	 * multibootusb depends on the following packages under Linux:
+	   	   * python3-pyqt5
+		   * p7zip-full
+		   * parted 
+		   * util-linux 
+		   * python3-pyudev
+		   * mtools
+		   * python3-dbus
+		   * python3-six
+	 * Install above packages using your package manager. Remember that package name may not be identical for all distros. You need to search equivalent package for your distro and install it.
+	 * `You must uninstall your previous installation of multibootusb, if you have done it earlier.`
+	 * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
+	 * Extract to local directory and move in to `multibootusb` directory.
+	 * Issue `sudo python3 ./multibootusb` command to start GUI
+
+	 ** On Windows: **
+    
+	 * Download and install following packages:
+	   	   * [Python 3](https://www.python.org/downloads/windows/). I use python version 3.5 but it should work on higher versions as well.
+		   * [PyQt5](https://www.riverbankcomputing.com/software/pyqt/download5) and installation instruction are [here](http://pyqt.sourceforge.net/Docs/PyQt5/installation.html)
+		   * [wmi](https://pypi.python.org/pypi/WMI) module
+		   * [pywin32](https://pypi.python.org/pypi/pywin32)
+		   * [psutils](https://pypi.python.org/pypi/psutil)
+		   * [Git](https://git-scm.com/download/win), if you wish to contribute back to multibootusb project
+	 * `Installation and configuration of above packages/ modules is not a part of this documentation. You must use Google for that.`
+	 * If you have installed python correctly on windows, it is recommanded that you use `pip3.exe` for installing above packages.
+	 * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
+	 * Open command prompt with admin privilage and move in to `multibootusb` directory.
+	 * Issue `python3.exe multibootusb` command to start GUI
 
 ---
 
