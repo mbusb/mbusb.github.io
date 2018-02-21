@@ -191,7 +191,7 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 
  <div style="text-align:center"><img src ="../img/remove-distro.png" /></div>
 
-* Select disto from the list and click `Uninstall Distro`.
+* Select distro from the list and click `Uninstall Distro`.
 
 * You will be notified after successful uninstallation.
 
