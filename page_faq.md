@@ -28,7 +28,7 @@ group: 		navigation
 
 ## What should I do if I get a iso not supported error message?
 
- * [Read this information carefully](#can-you-help-me-in-adding-my-favourite-disto-in-to-multibootusb).
+ * [Read this information carefully](#can-you-help-me-in-adding-my-favourite-distro-in-to-multibootusb).
  * You can submit this issue in github page at [https://github.com/mbusb/multibootusb/issues](https://github.com/mbusb/multibootusb/issues). 
  * It is OK to send it on email but it is not reccommended. The github issue will remind me of pending work or someone else can also can read and solve your issue. 
 

@@ -15,7 +15,7 @@ for his valuable contribution and all credits goes to him for redesigning of GUI
 * Use system pyudev library by default
 * Fixed syslinux install failure in distro dir on ext2/3/4
 * Fixed crash when writing ISO to USB on Windows
-* Detection of isolinux version 2 shipped by disto and install version 3 instead on usb
+* Detection of isolinux version 2 shipped by distro and install version 3 instead on usb
 * Improvements to persistence logic
 * Simplified USB disk detection
 * Improved CentOS detection
