@@ -54,7 +54,7 @@ subtitle: Some highlights...
 </div>
 <div class="col-md-8" style="text-align: left; vertical-align: middle;">
 <h4 style="text-align: center;"></h4>
-<p style="text-align: justify;">MultiBootUSB supports many distros and still counting. There is no pre-configured distro specific files included in MultiBootUSB. The configuration files are modified dynamically during installation so that user get the distro&#8217;s all available default boot options.</p>
+<p style="text-align: justify;">MultiBootUSB supports many distros and still counting. There are no pre-configured distro-specific files included in MultiBootUSB. The configuration files are modified dynamically during installation so that the user receives all available default boot options for each distro.</p>
 </div>
 </div>
 </div>
@@ -67,7 +67,7 @@ subtitle: Some highlights...
 </div>
 <div class="col-md-8" style="text-align: left; vertical-align: middle;">
 <h4 style="text-align: center;"></h4>
-<p style="text-align: justify;">The entire code of MultiBootUSB is written in python. Python is a powerful dynamic programming language which is widely used in cross-platform application. The programming language use in famous software such as Dropbox is also used in MultiBootUSB.</p>
+<p style="text-align: justify;">The entire code of MultiBootUSB is written in Python. Python is a powerful dynamic programming language widely used in cross-platform application. The programming language used in famous software such as Dropbox is also used in MultiBootUSB.</p>
 </div>
 </div>
 </div>
@@ -81,7 +81,7 @@ subtitle: Some highlights...
 <div class="col-md-8" style="text-align: left; vertical-align: middle;">
 <h4 style="text-align: center;"></h4>
 
-<p style="text-align: justify;">GUI toolkit for MultiBootUSB has been carefully chosen as PyQt. PyQt is a Qt binding for python. MultiBootUSB make use of QtDesigner, a GUI form designer, for user interface so that we can code more. Qt is one of the most widely used GUI toolkit available in the filed today and looks native in all platform.</p>
+<p style="text-align: justify;">GUI toolkit for MultiBootUSB has been carefully chosen as PyQt. PyQt is a Qt binding for python. MultiBootUSB makes use of QtDesigner, a GUI form designer, for user interface so that we can code more. Qt is one of the most widely used GUI toolkits available in the field today and looks native on all platforms.</p>
 </div>
 </div>
 </div>
@@ -94,7 +94,7 @@ subtitle: Some highlights...
 </div>
 <div class="col-md-8" style="text-align: left; vertical-align: middle;">
 <h4 style="text-align: center;"></h4>
-<p style="text-align: justify;">Syslinux is used as default boot loader for making your USB bootable. The selection of boot loader is carefully chosen as many distros uses isolinux or syslinux in their ISOs. MultiBootUSB ships with different verion of syslinux to reduce incompatibility and install exact distro specif syslinux.</p>
+<p style="text-align: justify;">Syslinux is used the default boot loader for making your USB Flash Drive bootable. We looked at all options out there and decided to use Syslinux as many distros use Syslinux/Isolinux in their ISOs. MultiBootUSB ships with different verion of Syslinux to reduce incompatibility and installs the exact distro-specific Syslinux version.</p>
 </div>
 </div>
 </div>

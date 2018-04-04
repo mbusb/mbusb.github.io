@@ -22,7 +22,7 @@ Major changes since version 8.9.0 are:-
 * Fix crash when installing syslinux from CLI due to GPT check
 * Install extlinux under Linux for NTFS filesystem
 * Correct usage instructions in help text
-* Added option to choose install distro using memdisk. Beware that not all distos would work. But you can uninstall it any time.
+* Added option to choose install distro using memdisk. Beware that not all distros would work. But you can uninstall it any time.
 * Added Xenial Puppy
 * Added OSFclone
 * Added Redcore Linux

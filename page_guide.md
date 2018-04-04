@@ -1,32 +1,32 @@
 ---
-layout: page
+layout:     page
 title:      Guide
-subtitle: Learn how to use MultiBootUSB...
-comments:	false
-noToc:		true
-group: 		navigation
+subtitle:   Learn how to use MultiBootUSB...
+comments:   false
+noToc:      true
+group:      navigation
 ---
 
 ## Table of content:  
 
 
-[What does multibootusb do?](#what-does-multibootusb-do)  
+[What does MultiBootUSB do?](#what-does-multibootusb-do)  
 [Minimum Requirements](#requirements)  
-[Install  MultiBootUSB - Windows and Linux](#installation)  
-[Creating live linux on USB disk](#creating-live-linux-on-usb-disk)  
-[Adding new/additional live Linux](#adding-an-additional-live-linux)  
+[Install MultiBootUSB - Windows and Linux](#installation)  
+[Creating live Linux on USB disk](#creating-live-linux-on-usb-disk)  
+[Adding new/additional live Linux distro](#adding-an-additional-live-linux-distro)  
 [Adding Persistence file](#adding-persistence-file)  
-[Removing or Uninstalling a distro](#removing-or-uninstalling-distro)  
-[Write ISO image directly to USB disk](#writing-iso-directly-to-usb-disk)   
+[Removing or Uninstalling a distro](#removing-or-uninstalling-a-distro)  
+[Writing ISO image directly to USB disk](#writing-iso-directly-to-usb-disk)   
 [Reinstalling Syslinux](#reinstalling-syslinux)   
-[Edit Syslinux config files](#edit-syslinux-config-files)   
+[Editing Syslinux config files](#editing-syslinux-config-files)   
 [Test ISO and USB with QEMU option](#test-your-iso-and-usb-with-qemu-option)  
-[Using mltibootusb command line options](#using-mltibootusb-command-line-options)  
+[Using MultiBootUSB command line options](#using-multibootusb-command-line-options)  
 [What if something goes wrong?](#what-if-something-goes-wrong)
 
 ---
 
-## What does multibootusb do?
+## What does MultiBootUSB do?
 
 MultiBootUSB allows you to do the following:
 
@@ -51,8 +51,7 @@ MultiBootUSB allows you to do the following:
 ## Installation:
 
 * On Windows:
-    * The windows version of multbootusb is not a standalone program. You need to install it after download. Download the latest 
-      setup binary (.exe) file from [here](http://multibootusb.org/page_download/)
+    * The windows version of MultiBootUSB is not a standalone program. You need to install it after download. Download the latest setup binary (.exe) file from [here](http://multibootusb.org/page_download/)
     * The installation is fairly simple. Double click on the executable and follow the on-screen instructions.
 
 * On Linux:
@@ -65,7 +64,7 @@ MultiBootUSB allows you to do the following:
 
     **On Linux:**
 
-     * multibootusb depends on the following packages under Linux: 
+     * MultiBootUSB depends on the following packages under Linux: 
 
         * python3-pyqt5 
         * p7zip-full 
@@ -76,7 +75,7 @@ MultiBootUSB allows you to do the following:
         * python3-dbus 
         * python3-six
     * Install above packages using your package manager. Remember that package name may not be identical for all distros. You need to search equivalent package for your distro and install it.
-     * `You must uninstall your previous installation of multibootusb, if you have done it earlier.`
+     * `You must uninstall your previous installation of MultiBootUSB, if you have done it earlier.`
      * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
      * Extract to local directory and move in to `multibootusb` directory.
      * Issue `sudo python3 ./multibootusb` command to start GUI
@@ -90,7 +89,7 @@ MultiBootUSB allows you to do the following:
         * [wmi](https://pypi.python.org/pypi/WMI) module
         * [pywin32](https://pypi.python.org/pypi/pywin32)
         * [psutils](https://pypi.python.org/pypi/psutil)
-        * [Git](https://git-scm.com/download/win), if you wish to contribute back to multibootusb project
+        * [Git](https://git-scm.com/download/win), if you wish to contribute back to MultiBootUSB project
 
     * `Installation and configuration of above packages/ modules is not a part of this documentation. You must use Google for that.`
      * If you have installed python correctly on windows, it is recommanded that you use `pip3.exe` for installing above packages.
@@ -119,7 +118,7 @@ MultiBootUSB allows you to do the following:
       click on the USB disk icon to mount it. 
     * MultiBootUSB needs administrator privileges to run. When running as normal user, a password window will popup and ask for your password.
 
-  * `Windows:` Open multibootusb under `Start --> Program Files --> multibootusb --> Click multibootusb`
+  * `Windows:` Open MultiBootUSB under `Start --> Program Files --> MultiBootUSB --> Click MultiBootUSB`
 
   * Once started, the list of USB disks can be found under the **Select USB disk** combo box.
     You can find the details of currently selected USB disks just below combo box.
@@ -158,15 +157,15 @@ MultiBootUSB allows you to do the following:
 
 ---
 
-## Adding additional live Linux distros:
-* You can follow **Step 1**, **Step 2** and **Step 3** mentioned above for adding a new distro agan.
+## Adding an additional live Linux distro:
+* You can follow **Step 1**, **Step 2** and **Step 3** mentioned above for adding a new distro again.
 
 ---
 
 ## Adding persistence file:
-* Only distros based on Ubuntu, Fedora and Debain are supported.  
+* Only distros based on Ubuntu, Fedora and Debian are supported.  
 
-* Once you complete the **step 2** (Choose an ISO), multibootusb will detect the type of
+* Once you complete the **step 2** (Choose an ISO), MultiBootUSB will detect the type of
   distro and a persistence size chooser slider would appear below MultiBootUSB tab. 
    The maximum size of the persistence also automatically calculated according to the USB disk filesystem.
 
@@ -186,12 +185,12 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 
 ---
 
-## Removing/uninstalling distro:
-* You can only uninstall distros installed by multibootusb.
+## Removing or uninstalling a distro:
+* You can only uninstall distros installed by MultiBootUSB.
 
  <div style="text-align:center"><img src ="../img/remove-distro.png" /></div>
 
-* Select disto from the list and click `Uninstall Distro`.
+* Select distro from the list and click `Uninstall Distro`.
 
 * You will be notified after successful uninstallation.
 
@@ -201,11 +200,10 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 
 `Be warned that this method will destroy all data on target USB disk.`  
 
-* multibootusb also has an option to write ISO file directly to an USB disk.
+* MultiBootUSB also has an option to write ISO file directly to an USB disk.
    You can choose this option if any of the above method fails to create live usb disk.
 
-* You can think of this method as a GUI to the famous `dd` program under Linux. In fact, it actually uses `dd`
-   program for writing to disk.
+* You can think of this method as a GUI to `dd` under Linux. In fact, it actually uses `dd` for writing to disk.
 
  <div style="text-align:center"><img src ="../img/write-image-to-disk.png" /></div>
 
@@ -216,7 +214,7 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 
  <div style="text-align:center"><img src ="../img/imager-progress.png" /></div>
 
- * Please note that you need to select the whole disk `/dev/sdb` and not he device partition `/dev/sdb1`.
+ * Please note that you need to select the whole disk `/dev/sdb` and not the device partition `/dev/sdb1`.
 
  * You need to format the USB disk if you have to revert back to original state and start using nondestructive method. 
 
@@ -224,8 +222,7 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 ---
 
 ## Reinstalling Syslinux:
-* There may be a situation when you want to install syslinux for various reasons (e.g. using other live usb creator will 
-  remove syslinux installation performed by multibootusb). In such cases situation you can reinstall syslinux from the `Install syslinux` tab.
+* There may be a situation when you want to install Syslinux for various reasons (e.g. using other live USB creator will remove Syslinux installation performed by MultiBootUSB). In such cases you can reinstall Syslinux from the `Install syslinux` tab.
 
 <div style="text-align:center"><img src ="../img/install-syslinux.png" /></div>
 
@@ -235,11 +232,11 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 
 ---
 
-## Edit Syslinux config files:
+## Editing Syslinux config files:
 
  * **Please perform this action with caution. Any change in the path will make your distro install completely useless.**
 
- * View and edit syslinux.cfg file from the `Install syslinux` tab.
+ * View and edit syslinux.cfg file from the `Install Syslinux` tab.
     This action will open syslinux.cfg in a default text editor.
 
 ---
@@ -274,7 +271,7 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 
 ---
 
-## Using mltibootusb command line options
+## Using MultBootUSB command line options:
 
  * You can invoke command line options using `multibootusb -c`.
  * Windows users must use source code to avail this option.
@@ -282,10 +279,9 @@ Note: Few users have reported that Debian persistence option does'nt work proper
     ensure to run with admin privilege:
 
 ```sh
-An advanced multiboot live usb creator which can be used from the command line
-or via a GUI.
+An advanced MultiBoot live USB creator which can be used from the command line or via a GUI.
 
- Usage: python3 multibootusb [option(s)]
+Usage: python3 multibootusb [option(s)]
 
 Options:
   -h or --help        :   Print this help message and exit
