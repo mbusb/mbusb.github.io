@@ -30,7 +30,7 @@ group: 		navigation
 
  * [Read this information carefully](#can-you-help-me-in-adding-my-favourite-distro-in-to-multibootusb).
  * You can submit this issue in github page at [https://github.com/mbusb/multibootusb/issues](https://github.com/mbusb/multibootusb/issues). 
- * It is OK to send it on email but it is not reccommended. The github issue will remind me of pending work or someone else can also can read and solve your issue. 
+ * It is OK to send it on email but it is not recommended. The github issue will remind me of pending work or someone else can also can read and solve your issue. 
 
 ---
 
@@ -128,9 +128,9 @@ group: 		navigation
        * [Git](https://git-scm.com/download/win), if you wish to contribute back to multibootusb project
 
    * `Installation and configuration of above packages/ modules is not a part of this documentation. You must use Google for that.`
-   * If you have installed python correctly on windows, it is recommanded that you use `pip3.exe` for installing above packages.
+   * If you have installed python correctly on windows, it is recommended that you use `pip3.exe` for installing above packages.
    * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
-   * Open command prompt with admin privilage and move in to `multibootusb` directory.
+   * Open command prompt with admin privilege and move in to `multibootusb` directory.
    * Issue `python3.exe multibootusb` command to start GUI
 
 ---
@@ -170,6 +170,6 @@ group: 		navigation
 
  * This is based on various factors.
  * If it is only minor bug release, then the release will have minor version number. 
- * Version will be major if more distros, newer functinality and major change to code etc are added.
+ * Version will be major if more distros, newer functionality and major change to code etc are added.
 
 ---

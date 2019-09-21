@@ -92,9 +92,9 @@ MultiBootUSB allows you to do the following:
         * [Git](https://git-scm.com/download/win), if you wish to contribute back to MultiBootUSB project
 
     * `Installation and configuration of above packages/ modules is not a part of this documentation. You must use Google for that.`
-     * If you have installed python correctly on windows, it is recommanded that you use `pip3.exe` for installing above packages.
+     * If you have installed python correctly on windows, it is recommended that you use `pip3.exe` for installing above packages.
      * Download source code of stable version from [here](https://codeload.github.com/mbusb/multibootusb/zip/master) or development version from [here](https://codeload.github.com/mbusb/multibootusb/zip/devel)
-     * Open command prompt with admin privilage and move in to `multibootusb` directory.
+     * Open command prompt with admin privilege and move in to `multibootusb` directory.
      * Issue `python3.exe multibootusb` command to start GUI
 
 ---
@@ -108,7 +108,7 @@ MultiBootUSB allows you to do the following:
     3. Step 3- Click `Install distro` button.
 
   * **Step 1- Insert USB disk and start the program**
-  * Insert USB disk and wait for a few seconds so that operating oystem can detect it.
+  * Insert USB disk and wait for a few seconds so that operating system can detect it.
 
   <div style="text-align:center"><img src ="../img/select-usb-disk.png" /></div>
   ​	
@@ -173,7 +173,7 @@ MultiBootUSB allows you to do the following:
 
 * Choose the desired persistence size by dragging the slider to right and follow the **Step 3** as usual.
 
-* Once distro installes successfully, you will find the additional persistence file under distro install directory.
+* Once distro installs successfully, you will find the additional persistence file under distro install directory.
 
 <div style="text-align:center"><img src ="../img/applying-persistence.png" /></div>   
 
@@ -181,7 +181,7 @@ MultiBootUSB allows you to do the following:
 * Reboot your system to choose your favourite distro as persistence menu will be added automatically to menu entry.
 
 
-Note: Few users have reported that Debian persistence option does'nt work properly.
+Note: Few users have reported that Debian persistence option doesn't work properly.
 
 ---
 
@@ -210,7 +210,7 @@ Note: Few users have reported that Debian persistence option does'nt work proper
  * To write to USB disk, you need to choose, the USB disk, ISO image and click on the 
     `Write image to disk` push button available under **Write image to disk** tab.
 
- * A review window will appear for confirmation and select yes to proceed. Once selected, ISO writing will start and progress will be indicated in progressbar.
+ * A review window will appear for confirmation and select yes to proceed. Once selected, ISO writing will start and progress will be indicated in progress-bar.
 
  <div style="text-align:center"><img src ="../img/imager-progress.png" /></div>
 
@@ -271,7 +271,7 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 
 ---
 
-## Using MultBootUSB command line options:
+## Using MultiBootUSB command line options:
 
  * You can invoke command line options using `multibootusb -c`.
  * Windows users must use source code to avail this option.
