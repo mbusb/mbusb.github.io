@@ -271,7 +271,7 @@ Note: Few users have reported that Debian persistence option does'nt work proper
 
 ---
 
-## Using MultBootUSB command line options:
+## Using MultiBootUSB command line options:
 
  * You can invoke command line options using `multibootusb -c`.
  * Windows users must use source code to avail this option.
