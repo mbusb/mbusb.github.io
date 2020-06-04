@@ -13,7 +13,7 @@ subtitle: Some highlights...
 </div>
 <div class="col-md-8" style="text-align: left; vertical-align: middle;">
 <h4 style="text-align: center;"></h4>
-<p style="text-align: justify;">No matter you work in Windows or Linux, MultiBootUSB will work in the same manner. Bootable USB created in windows should work in Linux and vice versa. It also reduces the development time significantly as the code base is same for Windows and Linux.</p>
+<p style="text-align: justify;">No matter if you work in Windows or Linux, MultiBootUSB will work in the same manner. Bootable USB created in windows should work in Linux and vice versa. It also reduces the development time significantly as the code base is same for Windows and Linux.</p>
 </div>
 </div>
 </div>
@@ -94,7 +94,7 @@ subtitle: Some highlights...
 </div>
 <div class="col-md-8" style="text-align: left; vertical-align: middle;">
 <h4 style="text-align: center;"></h4>
-<p style="text-align: justify;">Syslinux is used the default boot loader for making your USB Flash Drive bootable. We looked at all options out there and decided to use Syslinux as many distros use Syslinux/Isolinux in their ISOs. MultiBootUSB ships with different verion of Syslinux to reduce incompatibility and installs the exact distro-specific Syslinux version.</p>
+<p style="text-align: justify;">Syslinux is used as the default boot loader for making your USB Flash Drive bootable. We looked at all options out there and decided to use Syslinux as many distros use Syslinux/Isolinux in their ISOs. MultiBootUSB ships with different versions of Syslinux to reduce incompatibility and installs the exact distro-specific Syslinux version.</p>
 </div>
 </div>
 </div>
